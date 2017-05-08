@@ -30,11 +30,11 @@ Email : hyjang@cisco.com
 ''')
     
     print('Imported Packages');
-    loadPackageToGlobals___()
+    PackageList__()
     print('')
     
     while True:
-        raw_input('Press "Enter" To Execute, "Ctrl + C" To Exit >>')
+        raw_input('\n###############################################\nPress "Enter" To Execute, "Ctrl + C" To Exit >>')
         try:
             with open('./maincode.py') as fd:
                 code = fd.read()

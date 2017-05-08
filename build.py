@@ -16,8 +16,8 @@ if __name__ == '__main__':
         packages = span
         with open('./src/binpack.py', 'w') as fd:
             for p in packages: fd.write('import %s\n' % p)
-            fd.write('\ndef loadPackageToGlobals___():\n')
-            for p in packages: fd.write("\tglobal %s; %s = %s; print(' - %s')\n" % (p, p, p, p))
+            fd.write('\ndef PackageList__():\n')
+            for p in packages: fd.write("\tprint(' - %s')\n" % p)
     except Exception as e:
         print 'Build Failed with', type(e), str(e)
         exit(1)
